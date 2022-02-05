@@ -1,0 +1,117 @@
+<!-- contraseña -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospita-geen: #ACD982;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        }    
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+            justify-self: center;
+            display: none;
+        }
+        .title {
+            font-size: var(--lg );
+            margin-bottom: 15px;
+            text-align: star;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        .label {
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom:15px;
+        }
+        .input {
+            background-color:var(--text-input-field);
+            opacity: .4;
+            border: none;
+            border-radius: 15px;
+            height: 18px;
+            font-size: var(--md);
+            padding: 7px;
+            margin-bottom: 30px;
+        }
+        .input-name 
+        .input-email
+        .input-password{
+            margin-bottom: 22px;
+        } 
+
+        .primary-button {
+            background-color: orchid;
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 40px;
+            opacity: .6;
+        }
+        .login-button {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 640px){
+            .logo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <h1 class="title">My account</h1>
+            
+            <form action="/" class="form">
+                <label for="name class="label">Name</label>
+                <input type="text" id="name" placeholder="Ivan Camacho" class="input input-name">
+
+                <label for="email" class="label">Email</label>
+                <input type="text" id="email" placeholder="ivan@gmail.com" class="input input-email">
+
+                <label for="password" class="label">password</label>
+                <input type="" id="password" placeholder="**********" class="input input-password">
+                
+                <input type="submit" value="create" class="primary-button login-button" >
+            </form>   
+         </div>
+    </div>
+</body>
+</html>
